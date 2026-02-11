@@ -93,7 +93,7 @@ article {
 }
 
 .title,
-.subtitle, dt {
+.subtitle {
   font-family: var(--sans-serif);
 }
 
