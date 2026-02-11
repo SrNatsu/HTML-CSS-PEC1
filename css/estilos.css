@@ -1,0 +1,240 @@
+/*
+|----------------------------------------
+| VARIABLES
+|----------------------------------------
+*/
+
+:root {
+  --primary-color: #141316;
+  --secondary-color: #ffffff;
+  --accent-color: #7119E1;
+  --primary-bg-color: #f1f2f6;
+  --secondary-bg-color: #250353;
+
+  --serif: 'Cambria', 'Georgia', serif;
+  --sans-serif: 'Verdana', 'Geneva', sans-serif;
+}
+
+/*
+|----------------------------------------
+| RESET Y BASE STYLES
+|----------------------------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--serif);
+  color: var(--primary-color);
+}
+
+/*
+|----------------------------------------
+| LAYOUT
+|----------------------------------------
+*/
+header,
+footer {
+  text-align: center;
+  width: 100%;
+}
+
+nav {
+  background-color: var(--secondary-bg-color);
+}
+
+nav>ul {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer {
+  color: var(--secondary-color);
+  background-color: var(--secondary-bg-color);
+  font-family: var(--sans-serif);
+}
+
+.container {
+  width: 95%;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+/*
+|----------------------------------------
+| TYPOGRAPHY & TITLES
+|----------------------------------------
+*/
+
+.web-title {
+  background-color: var(--primary-bg-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: var(--sans-serif);
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+.title,
+.subtitle {
+  font-family: var(--sans-serif);
+}
+
+.title {
+  text-align: center;
+}
+
+.web-title span {
+  font-family: var(--serif);
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.source, figcaption,
+.author {
+  font-family: var(--sans-serif);
+}
+
+.source {
+  margin: 1.5rem 0 3rem 0;
+  font-size: .75rem;
+}
+
+/*
+|----------------------------------------
+| LINKS
+|----------------------------------------
+*/
+
+.link-text {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.link-text:hover {
+  color: var(--primary-color);
+}
+
+.link-menu {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-family: var(--sans-serif);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.link-menu:hover {
+  text-decoration: underline;
+}
+
+.link-menu.active {
+  font-weight: 700;
+}
+
+
+/*
+|----------------------------------------
+| LISTS
+|----------------------------------------
+*/
+
+.list-first {
+  list-style: square;
+  margin-left: 2rem;
+  padding: 1rem 1rem .5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.list-first > li {
+  font-weight: 700;
+  padding: .5rem .5rem 0 .5rem;
+}
+
+.list-first > li::marker {
+  color: var(--accent-color);
+}
+
+.list-second {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.list-second > li {
+  padding: .5rem;
+  font-weight: normal;
+}
+
+/*
+|----------------------------------------
+| IMAGES AND VIDEOS
+|----------------------------------------
+*/
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem 0 0 0;
+}
+
+img {
+  align-self: center;
+}
+
+figcaption {
+  font-size: .75rem;
+  text-align: right;
+  padding: 1rem 0;
+}
+
+/*
+|----------------------------------------
+| COMPONENTS
+|----------------------------------------
+*/
+
+blockquote {
+  background-color: var(--primary-bg-color);
+  border-left: 3px solid var(--primary-color);
+  font-weight: 700;
+}
+
+q {
+  font-weight: 700;
+}
+
+cite {
+  font-family: var(--sans-serif);
+  font-style: normal;
+}
+
+abbr {
+  text-decoration: dotted;
+}
+
+/*
+|----------------------------------------
+| PAGES
+|----------------------------------------
+*/
+
+.bibliography {
+  margin-left: 25%;
+  margin-bottom: 1rem;
+}
+
+.subtitle + p {
+  margin-top: 1rem;
+}
