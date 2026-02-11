@@ -58,6 +58,11 @@ footer {
   color: var(--secondary-color);
   background-color: var(--secondary-bg-color);
   font-family: var(--sans-serif);
+  padding: 1.5rem;
+  font-size: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .container {
@@ -218,10 +223,6 @@ q {
 cite {
   font-family: var(--sans-serif);
   font-style: normal;
-}
-
-abbr {
-  text-decoration: dotted;
 }
 
 /*
